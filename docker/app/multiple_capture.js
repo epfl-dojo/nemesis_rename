@@ -13,7 +13,9 @@ var fs = require('fs');
     const context = await browser.createIncognitoBrowserContext();
     // Create a new page in a pristine context.
     const page = await context.newPage();
+    await page.setCacheEnabled(false);
 
+    // TODO: see if we can just  fix the width and still get the full page
     // await page.setViewport({
     //   width: 1280,
     //   height: 2048,
