@@ -1,3 +1,4 @@
+// docker run --user 1000:1000 -v $PWD/out:/tmp webcapture http://www.epfl.ch/ /tmp/aaa.png
 const puppeteer = require('puppeteer');
 
 (async () => {
